@@ -84,7 +84,10 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-// TOKEN - Kendi token'ını buraya yaz
-const token = "MTQ3NzI3OTU0NjYxNjE4OTA3OA.GeDlIh.eGOeiZEjceAp_iiPjN0UQC1CtOim9T-O5rkV3k";
-
+// TOKEN - Environment variable'dan al
+const token = process.env.DISCORD_TOKEN;
+if (!token) {
+  console.error('❌ DISCORD_TOKEN environment variable is not set!');
+  process.exit(1);
+}
 client.login(token);
