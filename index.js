@@ -1,3 +1,13 @@
+// const token = process.env.DISCORD_TOKEN;
+const token = "MTQ3NzI3OTU0NjYxNjE4OTA3OA.GwoNj6.SBbUqWcELCYxw_tok1zaZo0LtJnaX-cd4_8Lig"; // KENDİ TOKEN'INI YAZ
+
+// Şu if bloğunu kaldır veya yorum yap:
+// if (!token) {
+//   console.error('❌ DISCORD_TOKEN environment variable is not set!');
+//   process.exit(1);
+// }
+
+client.login(token);
 const { Client, GatewayIntentBits, PermissionsBitField } = require('discord.js');
 
 const client = new Client({
