@@ -85,6 +85,6 @@ client.on('messageCreate', async (message) => {
 });
 
 // TOKEN - Kendi token'ını buraya yaz
-const token = "MTQ3NzI3OTU0NjYxNjE4OTA3OA.GwoNj6.SBbUqWcELCYxw_tok1zaZo0LtJnaX-cd4_8Lig";
+const token = "MTQ3NzI3OTU0NjYxNjE4OTA3OA.GeDlIh.eGOeiZEjceAp_iiPjN0UQC1CtOim9T-O5rkV3k";
 
 client.login(token);
